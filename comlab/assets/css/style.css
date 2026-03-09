@@ -1,0 +1,90 @@
+body {
+    background: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+.app-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.main-content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+}
+
+.topbar {
+    background: #fff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 16px 24px;
+}
+
+.content-area {
+    padding: 24px;
+}
+
+.active-link {
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+}
+
+.card-stat,
+.table-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.badge-online {
+    background: #28a745;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.badge-offline {
+    background: #dc3545;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.badge-pending {
+    background: #fd7e14;
+}
+
+.badge-executed {
+    background: #0d6efd;
+}
+
+.token-box {
+    font-size: 12px;
+    word-break: break-all;
+}
+
+@media (max-width: 991px) {
+    .app-wrapper {
+        display: block;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
